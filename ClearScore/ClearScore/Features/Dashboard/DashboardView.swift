@@ -12,7 +12,11 @@ struct DashboardView: View {
     @StateObject var dashboardViewModel = DashboardViewModel()
     
     var body: some View {
-        Text(dashboardViewModel.name)
+        NavigationView {
+            Text(String(dashboardViewModel.creditReportInfo.score ?? 0))
+        }.onAppear {
+            dashboardViewModel.fetchCreditReportInfo()
+        }
     }
 }
 
