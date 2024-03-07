@@ -16,21 +16,27 @@ struct DashboardView: View {
         NavigationView {
             ZStack {
                 Circle()
-                    .stroke(Color.black, lineWidth: 4)
-                    .frame(width: 300, height: 300)
-                    .scaleEffect(isPulsating ? 1.1 : 1)
-                                .onAppear() {
-                                    withAnimation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)) {
-                                        self.isPulsating.toggle()
-                                    }
-                                }
+                    .stroke(Color.gray, style: StrokeStyle(lineWidth: 10))
+                    .frame(width: 250, height: 250)
+
+                Circle()
+                    .trim(from: 0, to: dashboardViewModel.percentage)
+                    .stroke(
+                        AngularGradient(gradient: Gradient(colors: [Color.yellow, Color.orange]), center: .center),
+                        style: StrokeStyle(lineWidth: 10, lineCap: .round)
+                    )
+                    .frame(width: 250, height: 250)
+                    .rotationEffect(Angle(degrees: -90))
+                    .animation(.easeInOut(duration: 1.5))
                 NavigationLink(destination: DetailView(creditReport: dashboardViewModel.creditReportInfo)) {
                     VStack {
                         Text("Your credit score is")
+                            .foregroundColor(.black)
                         Text(String(dashboardViewModel.creditReportInfo.score ?? 0))
                             .font(.largeTitle)
                             .foregroundColor(.yellow)
                         Text("out of " + String(dashboardViewModel.creditReportInfo.maxScoreValue ?? 0))
+                            .foregroundColor(.black)
                     }
                 }
             }
