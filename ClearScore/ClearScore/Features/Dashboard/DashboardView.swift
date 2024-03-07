@@ -30,17 +30,17 @@ struct DashboardView: View {
                     .animation(.easeInOut(duration: 1.5))
                 NavigationLink(destination: DetailView(creditReport: dashboardViewModel.creditReportInfo)) {
                     VStack {
-                        Text("Your credit score is")
+                        Text(LocalizedStrings.creditScoreIs)
                             .foregroundColor(.black)
                         Text(String(dashboardViewModel.creditReportInfo.score ?? 0))
                             .font(.largeTitle)
                             .foregroundColor(.yellow)
-                        Text("out of " + String(dashboardViewModel.creditReportInfo.maxScoreValue ?? 0))
+                        Text(LocalizedStrings.outOf + String(dashboardViewModel.creditReportInfo.maxScoreValue ?? 0))
                             .foregroundColor(.black)
                     }
                 }
             }
-            .navigationBarTitle("Dashboard", displayMode: .inline)
+            .navigationBarTitle(LocalizedStrings.dashboard, displayMode: .inline)
         }.onAppear {
             dashboardViewModel.fetchCreditReportInfo()
         }

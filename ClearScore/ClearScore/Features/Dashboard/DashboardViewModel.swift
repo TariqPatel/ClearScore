@@ -8,7 +8,6 @@
 import Foundation
 
 final class DashboardViewModel: ObservableObject {
-    @Published var name: String = "ClearScore"
     @Published var creditReportInfo = CreditReportInfo()
     @Published var percentage: CGFloat = 0.0
     
