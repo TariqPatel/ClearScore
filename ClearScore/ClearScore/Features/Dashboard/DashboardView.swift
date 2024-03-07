@@ -41,6 +41,7 @@ struct DashboardView: View {
                 }
             }
             .navigationBarTitle(LocalizedStrings.dashboard, displayMode: .inline)
+            .navigationBarColor(backgroundColor: .black, titleColor: .white)
         }.onAppear {
             dashboardViewModel.fetchCreditReportInfo()
         }

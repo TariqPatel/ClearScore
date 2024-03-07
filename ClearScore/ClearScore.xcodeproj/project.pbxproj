@@ -22,6 +22,7 @@
 		19EBED372B99EAAF00D4CC23 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBED362B99EAAE00D4CC23 /* DetailView.swift */; };
 		19EBED3A2B99FF1500D4CC23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBED392B99FF1500D4CC23 /* Constants.swift */; };
 		19EBED3C2B9A003000D4CC23 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBED3B2B9A003000D4CC23 /* Localizable.swift */; };
+		19EBED3E2B9A069100D4CC23 /* NavigationExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBED3D2B9A069100D4CC23 /* NavigationExtender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		19EBED362B99EAAE00D4CC23 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		19EBED392B99FF1500D4CC23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		19EBED3B2B9A003000D4CC23 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		19EBED3D2B9A069100D4CC23 /* NavigationExtender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExtender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			children = (
 				19EBED392B99FF1500D4CC23 /* Constants.swift */,
 				19EBED3B2B9A003000D4CC23 /* Localizable.swift */,
+				19EBED3D2B9A069100D4CC23 /* NavigationExtender.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				198E60E52B98EBBD0025C321 /* DashboardView.swift in Sources */,
 				198E60E82B98EBD60025C321 /* DashboardViewModel.swift in Sources */,
 				198E60E22B98EB960025C321 /* NetworkErrorEnum.swift in Sources */,
+				19EBED3E2B9A069100D4CC23 /* NavigationExtender.swift in Sources */,
 				198E60B42B98EAFB0025C321 /* ClearScoreApp.swift in Sources */,
 				19EBED3A2B99FF1500D4CC23 /* Constants.swift in Sources */,
 			);
