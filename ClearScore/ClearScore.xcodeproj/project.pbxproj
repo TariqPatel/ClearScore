@@ -19,6 +19,7 @@
 		198E60E52B98EBBD0025C321 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E60E42B98EBBD0025C321 /* DashboardView.swift */; };
 		198E60E82B98EBD60025C321 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E60E72B98EBD60025C321 /* DashboardViewModel.swift */; };
 		198E60EB2B98ED370025C321 /* CreditReportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E60EA2B98ED370025C321 /* CreditReportInfo.swift */; };
+		19EBED372B99EAAF00D4CC23 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBED362B99EAAE00D4CC23 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		198E60E42B98EBBD0025C321 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		198E60E72B98EBD60025C321 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		198E60EA2B98ED370025C321 /* CreditReportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfo.swift; sourceTree = "<group>"; };
+		19EBED362B99EAAE00D4CC23 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		198E60E32B98EBAB0025C321 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				19EBED352B99EA9E00D4CC23 /* Details */,
 				198E60E62B98EBC30025C321 /* Dashboard */,
 			);
 			path = Features;
@@ -180,6 +183,14 @@
 				198E60EA2B98ED370025C321 /* CreditReportInfo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		19EBED352B99EA9E00D4CC23 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				19EBED362B99EAAE00D4CC23 /* DetailView.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				198E60EB2B98ED370025C321 /* CreditReportInfo.swift in Sources */,
+				19EBED372B99EAAF00D4CC23 /* DetailView.swift in Sources */,
 				198E60B62B98EAFB0025C321 /* ContentView.swift in Sources */,
 				198E60DF2B98EB670025C321 /* NetworkService.swift in Sources */,
 				198E60E52B98EBBD0025C321 /* DashboardView.swift in Sources */,

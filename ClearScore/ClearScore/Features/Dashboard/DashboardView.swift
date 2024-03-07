@@ -17,12 +17,14 @@ struct DashboardView: View {
                 Circle()
                     .stroke(Color.black, lineWidth: 4)
                     .frame(width: 300, height: 300)
-                VStack {
-                    Text("Your credit score is")
-                    Text(String(dashboardViewModel.creditReportInfo.score ?? 0))
-                        .font(.largeTitle)
-                        .foregroundColor(.yellow)
-                    Text("out of " + String(dashboardViewModel.creditReportInfo.maxScoreValue ?? 0))
+                NavigationLink(destination: DetailView(creditReport: dashboardViewModel.creditReportInfo)) {
+                    VStack {
+                        Text("Your credit score is")
+                        Text(String(dashboardViewModel.creditReportInfo.score ?? 0))
+                            .font(.largeTitle)
+                            .foregroundColor(.yellow)
+                        Text("out of " + String(dashboardViewModel.creditReportInfo.maxScoreValue ?? 0))
+                    }
                 }
             }
             .navigationBarTitle("Dashboard", displayMode: .inline)
