@@ -10,6 +10,7 @@ import SwiftUI
 struct DashboardView: View {
     
     @StateObject var dashboardViewModel = DashboardViewModel()
+    @State private var isPulsating = false
     
     var body: some View {
         NavigationView {
@@ -17,6 +18,12 @@ struct DashboardView: View {
                 Circle()
                     .stroke(Color.black, lineWidth: 4)
                     .frame(width: 300, height: 300)
+                    .scaleEffect(isPulsating ? 1.1 : 1)
+                                .onAppear() {
+                                    withAnimation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)) {
+                                        self.isPulsating.toggle()
+                                    }
+                                }
                 NavigationLink(destination: DetailView(creditReport: dashboardViewModel.creditReportInfo)) {
                     VStack {
                         Text("Your credit score is")
