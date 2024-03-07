@@ -13,7 +13,7 @@ final class DashboardViewModel: ObservableObject {
     @Published var percentage: CGFloat = 0.0
     
     func fetchCreditReportInfo() {
-        guard let url = URL(string: "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values") else {return}
+        guard let url = URL(string: Constants.Strings.creditReportURL) else {return}
         NetworkService<CreditReportResponseModel>.fetchData(for: url) { (result) in
             switch result {
                 case .success(let response):

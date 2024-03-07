@@ -20,6 +20,7 @@
 		198E60E82B98EBD60025C321 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E60E72B98EBD60025C321 /* DashboardViewModel.swift */; };
 		198E60EB2B98ED370025C321 /* CreditReportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E60EA2B98ED370025C321 /* CreditReportInfo.swift */; };
 		19EBED372B99EAAF00D4CC23 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBED362B99EAAE00D4CC23 /* DetailView.swift */; };
+		19EBED3A2B99FF1500D4CC23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBED392B99FF1500D4CC23 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		198E60E72B98EBD60025C321 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		198E60EA2B98ED370025C321 /* CreditReportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfo.swift; sourceTree = "<group>"; };
 		19EBED362B99EAAE00D4CC23 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		19EBED392B99FF1500D4CC23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		198E60B22B98EAFB0025C321 /* ClearScore */ = {
 			isa = PBXGroup;
 			children = (
+				19EBED382B99FF0100D4CC23 /* Helpers */,
 				198E60E92B98ED230025C321 /* Models */,
 				198E60E32B98EBAB0025C321 /* Features */,
 				198E60E02B98EB830025C321 /* Enums */,
@@ -191,6 +194,14 @@
 				19EBED362B99EAAE00D4CC23 /* DetailView.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		19EBED382B99FF0100D4CC23 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				19EBED392B99FF1500D4CC23 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +342,7 @@
 				198E60E82B98EBD60025C321 /* DashboardViewModel.swift in Sources */,
 				198E60E22B98EB960025C321 /* NetworkErrorEnum.swift in Sources */,
 				198E60B42B98EAFB0025C321 /* ClearScoreApp.swift in Sources */,
+				19EBED3A2B99FF1500D4CC23 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
